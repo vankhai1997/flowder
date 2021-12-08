@@ -65,7 +65,7 @@ class Flowder {
           subscription.resume();
         },
         onDone: () async {
-          options.onDone.call();
+          options.onDone();
           await sink.close();
           if (options.client != null) client.close();
         },

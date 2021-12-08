@@ -20,7 +20,7 @@ class DownloaderUtils {
   bool deleteOnCancel;
 
   /// Function to be called when the download has finished.
-  final VoidCallback onDone;
+  final Function() onDone;
 
   /// Function with the current values of the download
   /// ```dart
